@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Scratch Card</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="card">
+
+    </div>
+        <script>
+            document.addEventListener('mousemove', function(e){
+                const card = document.querySelector('body');
+                const bubbles = document.createElement('span');
+                bubbles.style.left = -75 + e.offsetX+'px';
+                bubbles.style.top = -75 + e.offsetY+'px';
+                card.appendChild(bubbles);
+            });
+        </script>
+    
+</body>
+</html>
